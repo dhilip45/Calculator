@@ -1,0 +1,173 @@
+.calculator {
+  width: 20vw;
+  height: 70vh;
+  top: 5px;
+  border: 2px solid black;
+  margin: auto;
+  position: relative;
+  top: 100px;
+  gap: 5px;
+  display: grid;
+  padding: 20px;
+  background-color: rgb(83, 55, 55);
+  box-shadow: 20px 40px 25px black;
+}
+
+input {
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  /* border: 2px solid white; */
+}
+.calculator input {
+  margin-bottom: 8px; /* space between input box and buttons */
+}
+
+.calculator > .form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.calculator > .form-group > button {
+  width: 25%;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  border: 2px solid red;
+  transition: 0.2s;
+}
+
+/* Display input */
+.calculator > .form-group > input {
+  width: 100%;
+  font-size: 40px;
+  text-align: end;
+  outline: none;
+  border-radius: 5px;
+  padding-right: 10px;
+}
+
+/* Hover effects for numbers */
+.calculator
+  > .form-group
+  > button:not(.division):not(.madulo):not(.clear):not(.Del):not(.Add):not(
+    .Sub
+  ):not(.Mul):not(.evaluate) {
+  background-color: lightcoral;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.calculator
+  > .form-group
+  > button:not(.division):not(.madulo):not(.clear):not(.Del):not(.Add):not(
+    .Sub
+  ):not(.Mul):not(.evaluate):hover {
+  background-color: white;
+  font-size: 25px;
+  color: red;
+}
+
+/* Hover for operators and special buttons */
+.calculator > .form-group > button.division:hover {
+  background-color: #ff8c00; /* darker orange */
+}
+
+.calculator > .form-group > button.madulo:hover {
+  background-color: #ffa726; /* darker yellow */
+}
+
+.calculator > .form-group > button.clear:hover {
+  background-color: #d32f2f; /* darker red */
+}
+
+.calculator > .form-group > button.Del:hover {
+  background-color: #757575; /* darker gray */
+}
+
+.calculator > .form-group > button.Add:hover {
+  background-color: #388e3c; /* darker green */
+}
+
+.calculator > .form-group > button.Sub:hover {
+  background-color: #c62828; /* darker red */
+}
+
+.calculator > .form-group > button.Mul:hover {
+  background-color: #ff8c00; /* darker orange */
+}
+
+/* Equals button */
+.calculator > .form-group > button.evaluate {
+  background-color: rgb(49, 49, 155);
+}
+
+.calculator > .form-group > button.evaluate:hover {
+  background-color: rgb(73, 73, 177);
+}
+
+/* ---------------- Responsive Design ---------------- */
+
+/* 📱 Small devices (phones) */
+@media (max-width: 576px) {
+  .calculator {
+    width: 60vw;
+    height: 70vh;
+    padding: 15px;
+    top: 30px;
+  }
+
+  .calculator > .form-group > input {
+    font-size: 30px;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  .calculator > .form-group > button {
+    width: 23%;
+    font-size: 20px;
+    padding: 8px 0;
+    font-weight: bold;
+  }
+}
+
+/* 📲 Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 1024px) {
+  .calculator {
+    width: 40vw;
+    height: 80vh;
+    top: 30px;
+  }
+
+  .calculator > .form-group > input {
+    font-size: 32px;
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  .calculator > .form-group > button {
+    width: 22%;
+    font-size: 25px;
+  }
+}
+
+/* 💻 Large devices (Laptops / Desktops including 1366x768) */
+@media (min-width: 1025px) {
+  .calculator {
+    width: 25vw; /* slightly wider for better visibility on 1366px screens */
+    height: 80vh;
+    top: 0;
+  }
+
+  .calculator > .form-group > input {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+
+  .calculator > .form-group > button {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
