@@ -113,21 +113,21 @@ input {
 /* 📱 Small devices (phones) */
 @media (max-width: 576px) {
   .calculator {
-    width: 75vw;
-    height: 80vh;
+    width: 80vw;
+    height: 75vh;
     padding: 15px;
-    top: 30px;
+    top: 20px;
   }
 
   .calculator > .form-group > input {
-    font-size: 30px;
+    font-size: 35px;
     height: 100%;
     margin-bottom: 30px;
   }
 
   .calculator > .form-group > button {
-    width: 19%;
-    font-size: 24px;
+    width: 40%;
+    font-size: 25px;
     padding: 2px 0 2px 0;
     font-weight: bold;
   }
