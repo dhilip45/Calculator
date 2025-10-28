@@ -114,7 +114,7 @@ input {
 @media (max-width: 576px) {
   .calculator {
     width: 75vw;
-    height: 85vh;
+    height: 80vh;
     padding: 15px;
     top: 30px;
   }
@@ -126,9 +126,9 @@ input {
   }
 
   .calculator > .form-group > button {
-    width: 23%;
-    font-size: 20px;
-    padding: 8px 0;
+    width: 19%;
+    font-size: 24px;
+    padding: 2px 0 2px 0;
     font-weight: bold;
   }
 }
